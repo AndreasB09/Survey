@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>As the current apocalypse approaches</h1>
+    <h3>Please fill out this form</h3>
     <form action="/action_page.php">
         <fieldset>
-            <legend>Hello</legend>
-            <label for="name">What's your name</label><br>
-            <input type="text" placeholder="Your name"><br>
+            <legend>Identity</legend>
+            <br><label for="name">What's your name</label><br>
+            <input type="text" placeholder="Your name" required><br>
             <label for="realname">What's your real name</label><br>
             <input type="text" placeholder="Real name"><br>
         </fieldset>
-    </form>
+    </form><br>
     <label for="confirm">Are you sure</label>
     <select id="confirm" name="confirm">
         <option value="confirm">Yes</option>
@@ -23,26 +25,55 @@
     </select><br>
     <form action="">
         <fieldset>
-            <legend></legend>
-            <label for="secret">Enter your super secret super hero name</label><br>
+            <legend>Aleternate Persona</legend>
+            <br><label for="secret">Enter your super secret super hero name</label><br>
             <input type="password" placeholder="Shh!"><br>
             <label for="choose">If you haven't already selected a super secret super hero name pick one below</label><br>
             <select id="choose">
                 <option value="default">Already have one</option>
-                <option value="default">SuperNinja96</option>
-                <option value="default">Lady Bubbleblast</option>
-                <option value="default">Scarlet Arachnid</option>
-                <option value="default">Forestmanner123</option>
-                <option value="default">Sir Jaywalker</option>
-                <option value="default">Utopian Brawler</option>
-                <option value="default">Winter Knight88</option>
+                <option value="sn">SuperNinja96</option>
+                <option value="lb">Lady Bubbleblast</option>
+                <option value="sa">Scarlet Arachnid</option>
+                <option value="fm">Forestmanner123</option>
+                <option value="sj">Sir Jaywalker</option>
+                <option value="ub">Utopian Brawler</option>
+                <option value="wk">Winter Knight88</option>
             </select><br>
         </fieldset>
     </form>
-    <label for="born">When do you percieve being born?</lable><br>
+    <br><label for="born">When do you percieve being born?</lable><br>
     <input type="date" id="born" name="born" min="1960-01-01" max="2030-12-31"><br>
     <label for="time">At what time will the galactic counsil initiate Red Alert?</label><br>
-    <input type="time" id="time" name="time">
-
+    <input type="time" id="time" name="time"><br><br>
+    <fieldset id="origin">
+        <legend>Origin</legend>
+        <br><label for="origin">Does any/and/or/all of the following apply to you?</label>
+        <div>
+            <input type="checkbox">
+            <label for="radiation">Radiation exposure</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="bitten">Bitten by spider</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="mutations">Mutations</label>            
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="planet">Born on another planet</label>            
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="celestial">Celestial ancestry</label>            
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="emo">Emotionally damaged</label>
+        </div>
+    </fieldset><br>
+    <textarea name="message" rows="10" cols="38">Please type any additional information that could be of use</textarea><br>
+    <button>Submit</button>
 </body>
 </html>
